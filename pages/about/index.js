@@ -22,22 +22,8 @@ const aboutData = [
   {
     title: 'skills',
     info: [
-      {
-        title: 'Analytic Thinking',
-        // icons: [
-        //   <FaHtml5 />,
-        //   <FaCss3 />,
-        //   <FaJs />,
-        //   <FaReact />,
-        //   <SiNextdotjs />,
-        //   <SiFramer />,
-        //   <FaWordpress />,
-        // ],
-      },
-      {
-        title: 'Leadership and Teamwork',
-        // icons: [<FaFigma />, <SiAdobexd />, <SiAdobephotoshop />],
-      },
+      {title: 'Analytic Thinking',},
+      {title: 'Leadership and Teamwork',},
       {title: 'Threat Hunting',},
       {title: 'Risk Management',},
       {title: 'Vulnerability Assessment',},
@@ -238,15 +224,15 @@ const About = () => {
                   {/* title */}
                   <div className=" font-light mb-2 md:mb-0">{item.title}</div>
                   {/* <div className="hidden md:flex">-</div> */}
-                  <div>{item.stage}</div>
+                  {/* <div>{item.stage}</div> */}
                   {/* icons */}
-                  <div className="flex gap-x-4">
+                  {/* <div className="flex gap-x-4">
                     {item.icons?.map((icon, itemIndex) => {
                       return (
                         <div className="text-2xl text-white">{icon}</div>
                       );
                     })}
-                  </div>
+                  </div> */}
                 </div>
               );
             })}
