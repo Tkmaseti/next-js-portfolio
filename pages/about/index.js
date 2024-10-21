@@ -23,21 +23,25 @@ const aboutData = [
     title: 'skills',
     info: [
       {
-        title: 'Web Development',
-        icons: [
-          <FaHtml5 />,
-          <FaCss3 />,
-          <FaJs />,
-          <FaReact />,
-          <SiNextdotjs />,
-          <SiFramer />,
-          <FaWordpress />,
-        ],
+        title: 'Analytic Thinking',
+        // icons: [
+        //   <FaHtml5 />,
+        //   <FaCss3 />,
+        //   <FaJs />,
+        //   <FaReact />,
+        //   <SiNextdotjs />,
+        //   <SiFramer />,
+        //   <FaWordpress />,
+        // ],
       },
       {
-        title: 'UI/UX Design',
-        icons: [<FaFigma />, <SiAdobexd />, <SiAdobephotoshop />],
+        title: 'Leadership and Teamwork',
+        // icons: [<FaFigma />, <SiAdobexd />, <SiAdobephotoshop />],
       },
+      {title: 'Threat Hunting',},
+      {title: 'Risk Management',},
+      {title: 'Vulnerability Assessment',},
+      {title: 'Incident Handling',},
     ],
   },
   {
@@ -56,41 +60,62 @@ const aboutData = [
         stage: '2023 - 2023',
       },
       {
-        title: 'Cybersecurity Learning Specialist -  2U/EdX',
-        stage: '2023 - 2023',
+        title: 'Cybersecurity Learning Specialist -  2U',
+        stage: '2023 - Present',
       },
     ],
   },
   {
-    title: 'awards',
+    title: 'Certificates',
     info: [
       {
-        title: 'Webby Awards - Honoree',
-        stage: '2011 - 2012',
+        title: 'Systems Security Certified Practitioner',
+        stage: '10/2023',
       },
       {
-        title: 'Adobe Design Achievement Awards - Finalist',
-        stage: '2009 - 2010',
+        title: 'ISC2 Certified Cybersecurity',
+        stage: '03/2023',
       },
+      {
+        title: 'Threats Management and Governance',
+        stage: '04/2023',
+      },
+      {
+        title: 'Endpoint Security',
+        stage: '05/2023',
+      },
+      {
+        title: 'GIAC Security',
+        stage: '08/2023',
+      },
+      {
+        title: 'Digital Forensics',
+        stage: '03/2024',
+      },
+      {
+        title: 'Network Defense',
+        stage: '05/2024',
+      },
+
     ],
   },
-  {
-    title: 'credentials',
-    info: [
-      {
-        title: 'Certified Cybersecurity - ISC2',
-        stage: '2023',
-      },{
-        title: 'Software Development - UCT GSB',
-        stage: '2022',
-      },
-      {
-        title: 'Computer Science Diploma - UCT',
-        stage: '2021',
-      },
+  // {
+  //   title: 'credentials',
+  //   info: [
+  //     {
+  //       title: 'Certified Cybersecurity - ISC2',
+  //       stage: '2023',
+  //     },{
+  //       title: 'Software Development - UCT GSB',
+  //       stage: '2022',
+  //     },
+  //     {
+  //       title: 'Computer Science Degree - UCT',
+  //       stage: '2021',
+  //     },
       
-    ],
-  },
+  //   ],
+  // },
 ];
 
 // Components
@@ -116,17 +141,17 @@ const About = () => {
     <div className="h-full bg-primary/30 py-36 text-center xl:text-left xl:pl-20">
       <Circles />
       {/* Avatar Image */}
-      <motion.div 
+      {/* <motion.div 
       variants={fadeIn('right', 0.2)}
       initial='hidden'
       animate='show'
       exit='hidden'
       className="hidden xl:flex absolute bottom-0 -left-[390px]">
         <Avatar />
-      </motion.div>
+      </motion.div> */}
       <div className="container mx-auto h-full flex flex-col items-center xl:flex-row gap-x-6 mb-10">
         {/* text */}
-        <div className="flex-1 flex flex-col justify-center">
+        <div className="flex-1 flex flex-col justify-center mt-10">
           <motion.h2
           variants={fadeIn('right', 0.2)}
           initial='hidden'
@@ -139,7 +164,7 @@ const About = () => {
           animate='show'
           exit='hidden'
           className="max-w-[500px] mx-auto xl:mx-0 mb-6 xl:mb-12 px-2 xl:px-0">
-            A few years ago, I started freelancing as a developer. Since then, I've done remote work for small companies, consulted for startups, and embarked on a journey of become a cybersecurity analyst.
+            I am proactive Junior Cybersecurity Specialist with over 3 years of hands-on experience in cyber attack and defense activities. Adept in security assessments, penetration testing, and risk mitigation, with a proven track record of leading critical security projects. Demonstrates strong leadership and technical skills, eager to apply expertise to enhance organizational security posture and protect critical infrastructure.
           </motion.p>
           {/* counters */}
           <motion.div 
@@ -166,7 +191,7 @@ const About = () => {
               {/* projects */}
               <div className=" relative flex-1 after:w-[1px] after:h-full after:bg-white/10 after:absolute after:top-0 after:right-0">
                 <div className=" text-2xl xl:text-4xl font-extrabold text-accent mb-2 ">
-                  <CountUp start={0} end={53} duration={5} />+
+                  <CountUp start={0} end={56} duration={5} />+
                 </div>
                 <div className=" text-xs uppercase tracking-[1px] leading-[1.4] max-w-[100px] ">Finished projects</div>
               </div>
@@ -212,7 +237,7 @@ const About = () => {
                 <div key={itemIndex} className="flex-1 flex flex-col md:flex-row max-w-max gap-x-2 items-center text-white/60">
                   {/* title */}
                   <div className=" font-light mb-2 md:mb-0">{item.title}</div>
-                  <div className="hidden md:flex">-</div>
+                  {/* <div className="hidden md:flex">-</div> */}
                   <div>{item.stage}</div>
                   {/* icons */}
                   <div className="flex gap-x-4">

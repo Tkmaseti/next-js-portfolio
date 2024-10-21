@@ -25,8 +25,8 @@ const Home = () => {
             exit='hidden'
             className='h1'
           >
-            Transforming Ideas <br /> Into {' '}
-            <span className='text-accent'>Digital Reality</span>
+            Guarding Your<br /> Digital {' '}
+            <span className='text-accent'>World</span>
           </motion.h1>
           {/* subtitle */}
           <motion.p 
@@ -36,7 +36,7 @@ const Home = () => {
           animate='show' 
           exit='hidden'
           >
-          Welcome to my portfolio where you will get to know me, who am I, what I do as well as skills I've obtained during my journey of becoming a cybersecurity analyst
+          Welcome to my portfolio! Here, you’ll get to know me—who I am, what I do, and the skills I’ve acquired on my journey to becoming a cybersecurity analyst.
           </motion.p>
           {/* btn */}
           <div className='flex justify-center xl:hidden relative'>
@@ -71,7 +71,7 @@ const Home = () => {
         transition={{duration: 1, ease: 'easeInOut'}}
         className='w-full h-full max-w-[737px] max-h-[600px] absolute -bottom-32 lg:bottom-0 lg:right-[8%]'
         >
-          <Avatar />
+          {/* <Avatar /> */}
         </motion.div>
       </div>
     </div>

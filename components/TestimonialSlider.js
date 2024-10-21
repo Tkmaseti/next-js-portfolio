@@ -3,21 +3,21 @@ const testimonialData = [
   {
     image: '/t-avt-3.png',
     name: 'Athi Maqanda',
-    position: 'UCT GSB',
+    position: 'Supervisor @ UCT GSB',
     message:
       'Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum expedita odit beatae, cupiditate saepe quam officia aut placeat quas neque!',
   },
   {
     image: '/t-avt-2.png',
     name: 'Joshua Schell',
-    position: 'Younglings Africa',
+    position: 'Manager @ Younglings Africa',
     message:
       'Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum expedita odit beatae, cupiditate saepe quam officia aut placeat quas neque!',
   },
   {
     image: '/t-avt-1.png',
-    name: 'Jhon Doe',
-    position: 'Customer',
+    name: 'Claude Fortune',
+    position: 'Manager @ 2U',
     message:
       'Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum expedita odit beatae, cupiditate saepe quam officia aut placeat quas neque!',
   },
